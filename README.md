@@ -1,4 +1,4 @@
-# UrCoin Flutter App README
+# UrCoin Flutter Decentralized App
 
 ## Introduction
 Welcome to the README for our UrCoin Flutter app! This document provides essential information to help you understand, set up, and contribute to our UrCoin application. Whether you are a developer, tester, or user, this guide will assist you in getting started with our app.
@@ -10,8 +10,7 @@ Welcome to the README for our UrCoin Flutter app! This document provides essenti
   - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
-- [GitHub Repository](#github-repository)
+
 
 ## About UrCoin
 UrCoin is a small Flutter Wallet dApp that allows users to transfer cryptocurrencies easily. The app is developed based on the Ethereum Virtual Machine (EVM) and supports the following networks:
