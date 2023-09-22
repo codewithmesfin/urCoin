@@ -35,7 +35,8 @@ Before you start, make sure you have the following prerequisites installed on yo
 3. Get the dependencies:
    ```flutter pub get```
 4. Create a .env file in the root directory of the app with the following content:
-```ETHER_SCAN_API_KEY=Your_Ether_Scan_API_KEY
+```
+    ETHER_SCAN_API_KEY=Your_Ether_Scan_API_KEY
 ```
 ```
    SEPOLIA_API_KEY=Your_Alchemy_or_other_Provider_API_KEY
