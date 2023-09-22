@@ -64,7 +64,7 @@ class _OnboardingState extends State<Onboarding> {
   final List<Widget> _pages = [
     const OnboardingPage(
       image: image1,
-      title: "Welcome to upay",
+      title: "Welcome to urCoin",
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     ),
     const OnboardingPage(

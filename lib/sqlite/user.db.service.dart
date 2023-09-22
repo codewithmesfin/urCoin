@@ -44,7 +44,7 @@ class UserDatabaseHelper {
   }
 
   // Read all it
-  static Future<List<Map<String, dynamic>>> getItems() async {
+  static Future<List<Map<String, dynamic>>> getUsers() async {
     final db = await UserDatabaseHelper.db();
     return db.query(tableName, orderBy: "id");
   }
@@ -67,5 +67,12 @@ class UserDatabaseHelper {
         limit: 1);
 
     return user;
+  }
+
+  // Update a wallet record
+  static Future<int> updateUser(int id, String password) async {
+    final db = await UserDatabaseHelper.db();
+    return await db.update(tableName, {"password": password},
+        where: "id = ?", whereArgs: [id]);
   }
 }

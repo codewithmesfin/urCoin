@@ -15,3 +15,4 @@ const String wallet = "/wallet";
 const String transactions = "/transactions";
 const String showPrivatekey = "/show-privatekey";
 const String setting = "/settings";
+const String changePassword = "/change-password";

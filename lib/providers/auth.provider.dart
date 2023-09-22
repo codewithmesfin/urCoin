@@ -10,6 +10,7 @@ class AuthProvider with ChangeNotifier {
   String _email = "";
   String _phoneNumber = "";
   String _password = "";
+  String _newPassword = "";
   String _id = "";
   String? _token;
 
@@ -19,6 +20,7 @@ class AuthProvider with ChangeNotifier {
   String get email => _email;
   String get phoneNumber => _phoneNumber;
   String get password => _password;
+  String get newPassword => _newPassword;
   String get id => _id;
   String? get token => _token;
 
@@ -55,6 +57,11 @@ class AuthProvider with ChangeNotifier {
 
   void setPassword(String value) {
     _password = value;
+    notifyListeners();
+  }
+
+  void setNewPassword(String value) {
+    _newPassword = value;
     notifyListeners();
   }
 
@@ -123,5 +130,26 @@ class AuthProvider with ChangeNotifier {
     String token = prefs.getString('token')!;
     _currentUserId = token;
     return token;
+  }
+
+  Future<bool> changePassword() async {
+    try {
+      final user = await UserDatabaseHelper.signIn(_email, _password);
+
+      Object? userId = user[0]['id'];
+      if (user.isNotEmpty) {
+        try {
+          await UserDatabaseHelper.updateUser(
+              int.parse("$userId"), _newPassword);
+          return true;
+        } catch (e) {
+          return false;
+        }
+      } else {
+        return false;
+      }
+    } catch (e) {
+      return false;
+    }
   }
 }

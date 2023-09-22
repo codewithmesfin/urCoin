@@ -1,4 +1,4 @@
-# UrCoin Flutter Decentralized App
+# urCoin Flutter Decentralized App
 
 ## Introduction
 Welcome to the README for our UrCoin Flutter app! This document provides essential information to help you understand, set up, and contribute to our UrCoin application. Whether you are a developer, tester, or user, this guide will assist you in getting started with our app.

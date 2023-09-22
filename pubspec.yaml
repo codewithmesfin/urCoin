@@ -1,9 +1,6 @@
 name: urcoin
 description: urCoin - Decentantralized Wallet App Based on Ethereum Blockchain.
 
-# Platform  Firebase App Id
-# android   1:258556793412:android:5048bfcd0eaf45ef822211
-# ios       1:258556793412:ios:5601e41fa52fb1de822211
 
 publish_to: 'none' 
 

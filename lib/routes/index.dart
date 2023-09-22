@@ -6,6 +6,7 @@ import 'package:urcoin/routes/constants.dart';
 import 'package:urcoin/screens/home/index.dart';
 import 'package:urcoin/screens/root.screen.dart';
 import 'package:urcoin/screens/settings/index.dart';
+import 'package:urcoin/screens/user/change.password.dart';
 import 'package:urcoin/screens/user/signin.dart';
 import 'package:urcoin/screens/user/signup.dart';
 import 'package:urcoin/screens/wallet/add-import.wallet.dart';
@@ -65,6 +66,9 @@ Route<dynamic> generateRoute(RouteSettings settings) {
           pageBuilder: (_, a1, a2) => const ShowPrivatekey());
     case setting:
       return PageRouteBuilder(pageBuilder: (_, a1, a2) => const Settings());
+    case changePassword:
+      return PageRouteBuilder(
+          pageBuilder: (_, a1, a2) => const ChangePassword());
 
     default:
       return PageRouteBuilder(pageBuilder: (_, a1, a2) => const NotFound());
